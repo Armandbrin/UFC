@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset='utf-8' />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js'></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+
+    </script>
+    <title>Calendar</title>
+</head>
+
+<body>
+    <section>
+        <article class="flex justify-center">
+            <div class="w-[150vh] h-[95vh] m-2" id='calendar'></div>
+        </article>
+    </section>
+
+</body>
+
+</html>

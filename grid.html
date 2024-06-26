@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Grid</title>
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Fighters.json">
+</head>
+
+<body>
+    <div id="wrapper"></div>
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script>
+        // script grid
+        new gridjs.Grid({
+            columns: ["Name", "Email", "Phone Number"],
+            data: [
+                ["John", "john@example.com", "(353) 01 222 3333"],
+                ["Mark", "mark@gmail.com", "(01) 22 888 4444"],
+                ["Eoin", "eoin@gmail.com", "0097 22 654 00033"],
+                ["Sarah", "sarahcdd@gmail.com", "+322 876 1233"],
+                ["Afshin", "afshin@mail.com", "(353) 22 87 8356"]
+            ],
+            search : true
+        }).render(document.getElementById("wrapper"));
+
+        // script js
+    </script>
+</body>
+
+</html>
