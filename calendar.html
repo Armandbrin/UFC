@@ -2,9 +2,13 @@
 <html lang='fr'>
 
 <head>
-    <meta charset='utf-8' />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="rounded-lg" rel="shortcut icon" href="Images/Logo_head.png" />
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js'></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="index.js"></script>
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -16,15 +20,17 @@
         });
 
     </script>
-    <title>Calendar</title>
+    <title>ER ZONE</title>
 </head>
 
 <body>
-    <section>
-        <article class="flex justify-center">
-            <div class="w-[150vh] h-[95vh] m-2" id='calendar'></div>
-        </article>
+    <header id="navbar"></header>
+    <section class="flex justify-center">
+            <div class="w-full h-[50vh] m-5 border-2 text-2xl" id='calendar'></div>
     </section>
+    <div class="border-2 m-5 h-[30vh]">
+        <h1 class="text-4xl">Information date</h1>
+    </div>
 
 </body>
 

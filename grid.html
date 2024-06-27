@@ -2,31 +2,50 @@
 <html lang="fr">
 
 <head>
-    <title>Grid</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="rounded-lg" rel="shortcut icon" href="Images/Logo_head.png" />
     <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="Fighters.json">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="index.js"></script>
+    <title>ER ZONE</title>
 </head>
 
 <body>
-    <div id="wrapper"></div>
+    <header id="navbar"></header>
+    <div id="wrapper" class="m-5" style="grid-template-columns: 5vh, 8vh, 8vh"></div>
 
     <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
     <script>
-        // script grid
-        new gridjs.Grid({
-            columns: ["Name", "Email", "Phone Number"],
-            data: [
-                ["John", "john@example.com", "(353) 01 222 3333"],
-                ["Mark", "mark@gmail.com", "(01) 22 888 4444"],
-                ["Eoin", "eoin@gmail.com", "0097 22 654 00033"],
-                ["Sarah", "sarahcdd@gmail.com", "+322 876 1233"],
-                ["Afshin", "afshin@mail.com", "(353) 22 87 8356"]
-            ],
-            search : true
-        }).render(document.getElementById("wrapper"));
+        fetch("json/Fighters.json", {
+            headers: {
+                'Authorization': 'Basic ',
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+        })
+            .then(rep => rep.json())
+            .then(rep => {
+                new gridjs.Grid({
+                    columns: [{
+                        id: "LastName",
+                        name: "Nom",
 
-        // script js
+                    },
+                    {
+                        id: "FirstName",
+                        name: "Prénom",
+                    },
+                    {
+                        id: "Nickname",
+                        name: "Surnom",
+                    }],
+                    data: rep,
+                    search: true,
+                }).render(document.getElementById("wrapper"));
+            })
     </script>
+
 </body>
 
 </html>
