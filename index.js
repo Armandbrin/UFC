@@ -1,4 +1,4 @@
-document.getElementById('navbar');
+document.getElementById("navbar");
 
 async function fetchHeader() {
     let response = await fetch('header.html');
@@ -6,3 +6,13 @@ async function fetchHeader() {
 };
 
 addEventListener('load', fetchHeader());
+
+document.getElementById("footer");
+
+async function fetchfooter() {
+    let foot = await fetch('footer.html');
+    footer.innerHTML = await foot.text();
+};
+
+addEventListener('load', fetchfooter());
+
