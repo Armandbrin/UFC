@@ -12,26 +12,131 @@
     <title>ER ZONE</title>
 </head>
 
-<body>
+<body class="bg-black">
     <header id="navbar"></header>
-    <div id="wrapper" class="m-1">
-        <p>
-            nom:
-            <span id="LastName"></span>
-        </p>
-    </div>
+    <section class="flex flex-col lg:flex-row lg: w-full">
+        <article class="my-[5vh] lg:w-[50vw] mx-[6vw] flex flex-col gap-1 bg-[#444444] p-2 text-white relative text-xl">
+            <div>
+            <img class="h-[35vh] lg:h-[35vh] w-[40vw] lg:w-[15vw] absolute lg:top-[10vh] lg:left-[25vw] top-[20vh] left-[45vw]"
+                src="Images/ombre.png" alt="combattant">
+            </div>
+            <p class="text-2xl underline">
+                Profil:
+            </p>
+            <p class="text-3xl">
+                <span class="flex justify-center underline" id="nickname"></span>
+            </p>
+            <p class="text-xl">
+                Nom / Prénom: <br>
+                <span class="text-2xl" id="fullname"></span>
+            </p>
+            <p>
+                -Age:
+                <span id="birthdate"></span>
+                ans
+            </p>
+            <p>
+                -Taille:
+                <span id="height"></span>
+                m
+            </p>
+            <p>
+                -Poids:
+                <span id="weight"></span>
+                kg
+            </p>
+            <p>
+                -Victoires:
+                <span id="wins"></span>
+            </p>
+            <p>
+                -Défaites:
+                <span id="losses"></span>
+            </p>
+            <p>
+                -Egalité:
+                <span id="draws"></span>
+            </p>
+            <p>
+                -Porté des coups:
+                <span id="reach"></span>
+                m
+            </p>
+            <p>
+                -Non contesté
+                <span id="nocontests"></span>
+            </p>
+            <p>
+                -KO technique gagné:
+                <span id="tkowins"></span>
+            </p>
+            <p>
+                -KO technique perdue:
+                <span id="tkolosses"></span>
+            </p>
+            <p>
+                -Soumissions gagné:
+                <span id="submissions"></span>
+            </p>
+            <p>
+                -soumissions perdue:
+                <span id="submissionlosses"></span>
+            </p>
+            <p>
+                -Titres gagné:
+                <span id="titlewins"></span>
+            </p>
+            <p>
+                -Titres perdue:
+                <span id="titlelosses"></span>
+            </p>
+            <p>
+                -Titres partagé:
+                <span id="titledraws"></span>
+            </p>
+        </article>
+        <article class="my-[5vh] mx-[6vw] flex flex-col gap-1 bg-[#444444] p-2 text-white lg:w-[25%] text-xl">
+            <p class="text-2xl underline">
+                Statistiques:
+            </p>
+            <p>
+                -Coups:
+                <span id="sigstrikeslandedperminute"></span>
+                / min
+            </p>
+            <p>
+                -Précision des coups:
+                <span id="sigstrikeaccuracy"></span>
+                %
+            </p>
+            <p>
+                -Réussite de takedown:
+                <span id="takedownaverage"></span>
+            </p>
+            <p>
+                -Réussite de soumission:
+                <span id="submissionaverage"></span>
+            </p>
+            <p>
+                -Taux de KO:
+                <span id="knockoutpercentage"></span>
+                %
+            </p>
+            <p>
+                -Taux de TKO:
+                <span id="technicalknockoutpercentage"></span>
+                %
+            </p>
+            <p>
+                -Taux de décision:
+                <span id="decisionpercentage"></span>
+                %
+            </p>
+        </article>
+    </section>
     <footer id="footer"></footer>
     <script>
-        fetch("json/Fighters.json", {
-            headers: {
-                'Authorization': 'Basic ',
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-        })
-            .then(rep => rep.json())
-            .then(rep => {
-                
-            }).render(document.getElementById("wrapper"));      
+        profil()
     </script>
 </body>
 
