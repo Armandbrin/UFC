@@ -94,12 +94,15 @@ function profil() {
 function taille(Height) {
     return Math.trunc(((Height / 15.44) * 25.4)) / 100
 }
+
 function poids(Weight) {
     return Math.trunc((Weight / 1.535) / 2.205)
 }
+
 function portée(Reach) {
     return Math.trunc(((Reach / 15.44) * 25.4)) / 100
 }
+
 function anniv(BirthDate) {
     let today = new Date();
     let anniversaire = new Date(BirthDate);
@@ -110,4 +113,70 @@ function anniv(BirthDate) {
 
 
 
+if (window.matchMedia("(max-width: 900px)").matches) {
+    document.addEventListener('DOMContentLoaded', function () {
+
+
+        fetch("json/date-combat.json")
+            .then(rep => rep.json())
+            .then(rep => {
+                let newData = [];
+
+                for (let i = 0; i < rep.length; i++) {
+                    newData.push({
+                        title: rep[i].ShortName,
+                        start: rep[i].DateTime,
+                        borderColor: "#a20000",
+                    })
+                }
+                let calendarEl = document.getElementById('calendar');
+                let calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'listWeek',
+                    progressiveEventRendering: true,
+                    events: newData,
+                    views: {
+                        timeGrid: {
+                            dayMaxEventRows: 1
+                        }
+                    }
+                });
+                calendar.render();
+                calendar.setOption('locale', 'fr');
+            })
+
+    });
+} else {
+    
+    document.addEventListener('DOMContentLoaded', function () {
+
+
+        fetch("json/date-combat.json")
+            .then(rep => rep.json())
+            .then(rep => {
+                let newData = [];
+
+                for (let i = 0; i < rep.length; i++) {
+                    newData.push({
+                        title: rep[i].ShortName,
+                        start: rep[i].DateTime,
+                        borderColor: "#a20000",
+                    })
+                }
+                let calendarEl = document.getElementById('calendar');
+                let calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    progressiveEventRendering: true,
+                    events: newData,
+                    views: {
+                        timeGrid: {
+                            dayMaxEventRows: 1
+                        }
+                    }
+                });
+                calendar.render();
+                calendar.setOption('locale', 'fr');
+            })
+
+    });
+}
 

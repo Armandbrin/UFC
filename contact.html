@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,39 @@
     <link class="rounded-lg" rel="shortcut icon" href="Images/Logo_head.png" />
     <title>ER ZONE</title>
 </head>
+
 <body>
     <header id="navbar"></header>
+    <main>
+        <section class="bg-white border-2 border-black text-black lg:mx-[15vw] lg:mt-[5vh] m-5 p-2 gap-3 flex flex-col">
+            <h1 class="underline text-xl">Formulaire</h1>
+            <form action="" class="flex flex-col gap-3">
+                <div class="flex lg:flex-row flex-col gap-3 lg:justify-between">
+                    <div class="flex flex-col gap-3 lg:w-[33vw]">
+                        <input
+                            class="bg-[#a20000] text-white border-[1px] border-black rounded-lg p-1 placeholder-white"
+                            type="text" name="" id="" placeholder="Nom/Prénom">
+                        <input
+                            class="bg-[#a20000] text-white border-[1px] border-black rounded-lg p-1 placeholder-white"
+                            type="email" name="" id="" placeholder="Email">
+                    </div>
+                    <div class="flex flex-col gap-3 lg:w-[33vw]">
+                        <textarea
+                            class="bg-[#a20000] text-white border-[1px] border-black rounded-lg h-[15vh] p-1 placeholder-white"
+                            name="" id="" placeholder="Commentaires"></textarea>
+                    </div>
+                </div>
+                <div class="flex justify-center ">
+                    <button class="bg-[#a20000] text-white border-[1px] border-black rounded-lg w-[15vw] p-1"
+                        type="submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
+        <div class="flex justify-center">
+            <img class="w-[80vw] md:w-[60vw] lg:w-[40vw] h-[60vh] lg:h-[60vh]" src="Images/mma-contact.png" alt="">
+        </div>
+    </main>
     <footer id="footer"></footer>
 </body>
+
 </html>

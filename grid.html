@@ -14,11 +14,8 @@
 
 <body>
     <header id="navbar"></header>
-    <div id="wrapper" class="m-1"></div>
-    <div class="hidden w-full h-[50vh] border-2" id="info">
-        <p>Profil</p>
-    </div>
-    <footer id="footer"></footer>
+    <div id="wrapper" class="m-1  lg:mx-[10vw] lg:my-[3vh]"></div>
+    <footer class="lg:absolute lg:bottom-0 lg:w-full" id="footer"></footer>
     <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
     <script>
         fetch("json/Fighters.json", {
@@ -69,7 +66,6 @@
                     },
                     data: rep,
                     search: true,
-
                 }).render(document.getElementById("wrapper"));
             })
     </script>
