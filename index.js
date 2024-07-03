@@ -159,6 +159,9 @@ if (window.matchMedia("(max-width: 900px)").matches) {
                     newData.push({
                         title: rep[i].ShortName,
                         start: rep[i].DateTime,
+                        display: "block",
+                        backgroundColor: "white",
+                        textColor: "black",
                         borderColor: "#a20000",
                     })
                 }
