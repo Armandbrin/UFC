@@ -3,6 +3,8 @@
 
 ![](https://i.postimg.cc/Bv02K9NV/Accueil-tel.png)
 
+![](https://i.postimg.cc/8CNrCdz8/Accueil-pc.png)
+
 
 **Le header**
 mon header est identique pour toutes les pages de mon site.
@@ -38,6 +40,10 @@ Mon footer est juste composé de mon nom et du lien vers la page de contact.
 
 ![](https://i.postimg.cc/vTkV8pcX/Combattant-2-tel.png)
 
+![](https://i.postimg.cc/yNj33JDD/Combattant-1-pc.png)
+
+![](https://i.postimg.cc/NM096gXp/Combattant-2-pc.png)
+
 Cette page est composé d'une grille composé de tout les combattants compris dans l'API **Fighter.js**.
 Je l'ai importer dans la grille avec du JavaScript en utilisant **Fetch**.
 
@@ -62,6 +68,8 @@ Pour pouvoir affiché l'age, la taille, la portée et le poids j'ai du faire des
 
 ![](https://i.postimg.cc/QNy5qW05/Calendrier-tel.png)
 
+![](https://i.postimg.cc/TwHyQZqG/Calendrier-pc.png)
+
 Cette page est composé d'un calendrier en forme de liste pour la version téléphone et tablette 
 
 ![](https://i.postimg.cc/y6SzpM7d/calendar-tel.png)
@@ -83,6 +91,8 @@ Voici le code pour permettre de changé le style du calendrier en fonction de la
 ## Page de Contact
 
 ![](https://i.postimg.cc/654Zb5mP/Contact-tel.png)
+
+![](https://i.postimg.cc/T1LKsCCb/Contact-pc.png)
 
 Sur cette page j'ai crée un formulaire au couleur du logo MMA qui ce trouve juste en dessous.
 
