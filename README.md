@@ -1,5 +1,9 @@
 # FIGHT-ER ZONE
 ## L' Index (Page d'Accueil)
+
+![](https://i.postimg.cc/Bv02K9NV/Accueil-tel.png)
+
+
 **Le header**
 mon header est identique pour toutes les pages de mon site.
 Pour mon logo j'ai récupérer l'image d'un poing avec écrit "**FIGHT**" sur les doigt puis j'y ai rajouter "**ER ZONE**" a coté pour former le nom de mon site.
@@ -29,6 +33,11 @@ j'ai ajouté un hover sur mes images pour avoir une animation de zoom pour la ve
 mon footer est identique pour toutes les pages de mon site.
 Mon footer est juste composé de mon nom et du lien vers la page de contact.
 ## Page Combattant
+
+![](https://i.postimg.cc/KjRT2ZvR/Combattant-1-tel.png)
+
+![](https://i.postimg.cc/vTkV8pcX/Combattant-2-tel.png)
+
 Cette page est composé d'une grille composé de tout les combattants compris dans l'API **Fighter.js**.
 Je l'ai importer dans la grille avec du JavaScript en utilisant **Fetch**.
 
@@ -50,6 +59,9 @@ Pour pouvoir affiché l'age, la taille, la portée et le poids j'ai du faire des
 ![](https://i.postimg.cc/Hswfkhc2/calcul.png)
 
 ## Page Date
+
+![](https://i.postimg.cc/QNy5qW05/Calendrier-tel.png)
+
 Cette page est composé d'un calendrier en forme de liste pour la version téléphone et tablette 
 
 ![](https://i.postimg.cc/y6SzpM7d/calendar-tel.png)
@@ -69,6 +81,9 @@ Voici le code pour permettre de changé le style du calendrier en fonction de la
 ![](https://i.postimg.cc/5ykYtDkj/taille-calendar-2.png)
 
 ## Page de Contact
+
+![](https://i.postimg.cc/654Zb5mP/Contact-tel.png)
+
 Sur cette page j'ai crée un formulaire au couleur du logo MMA qui ce trouve juste en dessous.
 
 ![](https://i.postimg.cc/MZD7Z0ZB/form.png)
