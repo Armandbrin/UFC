@@ -112,7 +112,7 @@ function anniv(BirthDate) {
 
 
 
-
+// change le calendrier en fonction de la taille de l'écran
 if (window.matchMedia("(max-width: 900px)").matches) {
     document.addEventListener('DOMContentLoaded', function () {
 
